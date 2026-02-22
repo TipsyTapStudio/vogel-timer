@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#000"/>
+  <circle cx="32" cy="32" r="3" fill="#FFB464" opacity="0.9"/>
+  <circle cx="32" cy="26" r="2.5" fill="#FFB464" opacity="0.8"/>
+  <circle cx="37" cy="29" r="2.5" fill="#FFB464" opacity="0.8"/>
+  <circle cx="35" cy="35" r="2.5" fill="#FFB464" opacity="0.7"/>
+  <circle cx="28" cy="33" r="2.5" fill="#FFB464" opacity="0.7"/>
+  <circle cx="29" cy="27" r="2.5" fill="#FFB464" opacity="0.6"/>
+  <circle cx="38" cy="34" r="2.2" fill="#FFB464" opacity="0.5"/>
+  <circle cx="26" cy="29" r="2.2" fill="#FFB464" opacity="0.5"/>
+  <circle cx="34" cy="39" r="2.2" fill="#FFB464" opacity="0.4"/>
+  <circle cx="38" cy="26" r="2" fill="#FFB464" opacity="0.4"/>
+  <circle cx="26" cy="36" r="2" fill="#FFB464" opacity="0.4"/>
+  <circle cx="32" cy="22" r="2" fill="#FFB464" opacity="0.3"/>
+  <circle cx="40" cy="32" r="1.8" fill="#FFB464" opacity="0.3"/>
+  <circle cx="24" cy="32" r="1.8" fill="#FFB464" opacity="0.3"/>
+  <circle cx="32" cy="40" r="1.8" fill="#FFB464" opacity="0.3"/>
+</svg>
