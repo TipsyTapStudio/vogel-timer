@@ -3,7 +3,7 @@
  * Cache-first strategy for app shell, network-first for fonts.
  */
 
-const CACHE_NAME = 'vogel-timer-v1';
+const CACHE_NAME = 'vogel-timer-v2';
 const APP_SHELL = [
   './',
   './index.html',
@@ -13,6 +13,7 @@ const APP_SHELL = [
   './favicon.svg',
   './icon-192.png',
   './icon-512.png',
+  './logo.svg',
 ];
 
 // Install: pre-cache app shell

@@ -193,6 +193,7 @@ const CSS = `
 
 // ── LED colors ──
 const LED_COLORS: Record<string, string> = {
+  seed:   '#C8A840',
   nixie:  '#FF8C00',
   system: '#00FF41',
   studio: '#FFFFFF',
@@ -283,6 +284,12 @@ export function createConsole(
 
   btnSettings.addEventListener('click', () => toggleDrawer());
   overlay.addEventListener('click', () => toggleDrawer(false));
+
+  // ── Logo header ──
+  const logoHeader = document.createElement('div');
+  logoHeader.style.cssText = 'text-align:center; margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.06);';
+  logoHeader.innerHTML = `<img src="logo.svg" alt="VOGEL-TIMER" style="width:220px; height:auto; opacity:0.85;">`;
+  drawer.appendChild(logoHeader);
 
   // ── TIMER section ──
   const timerSection = document.createElement('div');
@@ -433,7 +440,7 @@ export function createConsole(
 
   const themeStrip = document.createElement('div');
   themeStrip.className = 'vt-theme-strip';
-  const themeNames = ['nixie', 'system', 'studio', 'cyber'];
+  const themeNames = ['seed', 'nixie', 'system', 'studio', 'cyber'];
   for (const name of themeNames) {
     const chip = document.createElement('div');
     chip.className = 'vt-theme-chip';

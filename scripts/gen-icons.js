@@ -100,10 +100,10 @@ function drawIcon(data, w, h) {
           if (ix >= 0 && ix < w && iy >= 0 && iy < h) {
             const idx = (iy * w + ix) * 4;
             const a = alpha;
-            // Nixie orange: RGB(255, 180, 100)
-            data[idx + 0] = Math.min(255, data[idx + 0] + Math.round(255 * a));
-            data[idx + 1] = Math.min(255, data[idx + 1] + Math.round(180 * a));
-            data[idx + 2] = Math.min(255, data[idx + 2] + Math.round(100 * a));
+            // Seed gold: RGB(200, 168, 64)
+            data[idx + 0] = Math.min(255, data[idx + 0] + Math.round(200 * a));
+            data[idx + 1] = Math.min(255, data[idx + 1] + Math.round(168 * a));
+            data[idx + 2] = Math.min(255, data[idx + 2] + Math.round(64 * a));
           }
         }
       }

@@ -420,6 +420,7 @@ function drawClock(ctx, remainingMs2, cx, cy, voidRadius, _shapeType, rgb, glowI
 
 // src/engine/renderer.ts
 var CLOCK_THEMES = [
+  { name: "Seed", segmentRGB: [200, 168, 64], grainRGB: [210, 185, 90], glowIntensity: 1.1 },
   { name: "Nixie", segmentRGB: [255, 147, 41], grainRGB: [255, 180, 100], glowIntensity: 1.2 },
   { name: "System", segmentRGB: [0, 255, 65], grainRGB: [120, 255, 140], glowIntensity: 0.8 },
   { name: "Studio", segmentRGB: [220, 220, 230], grainRGB: [230, 230, 240], glowIntensity: 1 },
@@ -859,6 +860,7 @@ var CSS = `
 .vt-sys-btn:hover { color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.04); }
 `;
 var LED_COLORS = {
+  seed: "#C8A840",
   nixie: "#FF8C00",
   system: "#00FF41",
   studio: "#FFFFFF",
@@ -911,6 +913,10 @@ function createConsole(container, initialDuration, initialResolution, initialDir
   }
   btnSettings.addEventListener("click", () => toggleDrawer());
   overlay.addEventListener("click", () => toggleDrawer(false));
+  const logoHeader = document.createElement("div");
+  logoHeader.style.cssText = "text-align:center; margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.06);";
+  logoHeader.innerHTML = `<img src="logo.svg" alt="VOGEL-TIMER" style="width:220px; height:auto; opacity:0.85;">`;
+  drawer.appendChild(logoHeader);
   const timerSection = document.createElement("div");
   timerSection.className = "vt-section";
   timerSection.innerHTML = '<div class="vt-section-title">TIMER</div>';
@@ -1040,7 +1046,7 @@ function createConsole(container, initialDuration, initialResolution, initialDir
   themeSection.innerHTML = '<div class="vt-section-title">THEME</div>';
   const themeStrip = document.createElement("div");
   themeStrip.className = "vt-theme-strip";
-  const themeNames = ["nixie", "system", "studio", "cyber"];
+  const themeNames = ["seed", "nixie", "system", "studio", "cyber"];
   for (const name of themeNames) {
     const chip = document.createElement("div");
     chip.className = "vt-theme-chip";
@@ -1179,7 +1185,7 @@ var DEFAULTS = {
   dir: "in-out",
   shape: "circle",
   dash: true,
-  theme: "nixie",
+  theme: "seed",
   s: 0
 };
 var STORAGE_KEY = "vogel-timer-settings";

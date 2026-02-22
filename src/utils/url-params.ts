@@ -21,7 +21,7 @@ const DEFAULTS: VogelParams = {
   dir: 'in-out',
   shape: 'circle',
   dash: true,
-  theme: 'nixie',
+  theme: 'seed',
   s: 0,
 };
 
